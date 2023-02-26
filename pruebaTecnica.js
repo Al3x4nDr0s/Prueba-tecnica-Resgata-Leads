@@ -53,14 +53,14 @@ function isPalindrome(string) {
 isPalindrome("racecar");
 
 // 4- Last but not least, refactor the code below until there is nothing else to refactor in your view:
-// Para JS use la refactorización re ruby.
+// Para JS usé la refactorización de ruby.
 
 
 
 class GildedRose {
   constructor(items) {
     this.items = items;
-  }
+  };
 
   updateQuality() {
     for (const item of this.items) {
@@ -87,20 +87,20 @@ class GildedRose {
         item.sell_in--;
         item.quality = item.sell_in < 0 ? item.quality - 2 : item.quality - 1;
         item.quality = Math.max(item.quality, 0);
-      }
-    }
-  }
-}
+      };
+    };
+  };
+};
 
 class Item {
   constructor(name, sell_in, quality) {
     this.name = name;
     this.sell_in = sell_in;
     this.quality = quality;
-  }
+  };
 
   toString() {
     return `${this.name}, ${this.sell_in}, ${this.quality}`;
-  }
-}
+  };
+};
 
